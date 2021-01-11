@@ -19,6 +19,8 @@ public class MvcConfig implements WebMvcConfigurer {
 
     //servlet-context
     //스프링이 처리하지 못한 경로에 대한 처리는 디폴트 서블릿에게 전달하여 처리하게 된다.
+    //정적 자원과 같은 특정 요청에 대해 컨테이너의 기본 서블릿을 사용하도록 Spring에 지시한다.
+    //default servlet handler를 사용하게 .
     //<mvc:default-servlet-handler>
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
